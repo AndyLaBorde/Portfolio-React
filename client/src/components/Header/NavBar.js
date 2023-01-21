@@ -14,7 +14,7 @@ function NavBar() {
                 {/* left side */}
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Link to="/home" className="text-decoration-none">
-                        <img src="/images/code-icon.png" className="App-logo" alt="logo" />
+                        <img src="client/public/images/code-icon.png" className="App-logo" alt="logo" />
                         <Navbar.Brand>Portfolio</Navbar.Brand>
                     </Link>
                 <Nav>
