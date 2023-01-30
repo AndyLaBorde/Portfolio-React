@@ -1,3 +1,4 @@
+
 import Badge from 'react-bootstrap/Badge';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
@@ -5,8 +6,8 @@ import Nav from 'react-bootstrap/Nav';
 
 function Footer() {
     return (
-        <div id="footer" className="container vw-100">
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
+        <div id="footer" bg="dark" className="container">
+            <Navbar  bg="dark" variant="dark" className="fixed-bottom">
                 <Container fluid>
                     <Nav.Link href="https://reactjs.org/" target="blank" className="m-3">
                         <Badge pill bg="info" text="dark">

@@ -1,6 +1,7 @@
 
 .App {
   text-align: center;
+  overflow: hidden
 }
 
 .App-logo {
@@ -28,6 +29,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+#projectScroll{
+  overflow: scroll;
+}
+
+#projectScroll::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes App-logo-spin {
