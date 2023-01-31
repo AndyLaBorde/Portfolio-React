@@ -11,7 +11,6 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App vh-100" class="bg-dark">
       <Router>
         <Header />
           <Routes>
@@ -22,7 +21,6 @@ function App() {
           </Routes>
         <Footer/>
       </Router>
-    </div>
   );
 }
 

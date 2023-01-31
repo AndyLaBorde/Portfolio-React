@@ -6,7 +6,11 @@ import Nav from 'react-bootstrap/Nav';
 
 function Footer() {
     return (
-        <div id="footer" bg="dark" className="container">
+        <div id="footer" bg="dark" style={{position: "absolute",
+    right: "10px",
+    height: "50px",
+    bottom: "10px",
+    left: "10px"}}>
             <Navbar  bg="dark" variant="dark" className="fixed-bottom">
                 <Container fluid>
                     <Nav.Link href="https://reactjs.org/" target="blank" className="m-3">

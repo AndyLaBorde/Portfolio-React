@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -20,13 +19,17 @@ function Mailto({ email, subject, body, ...props }) {
 
 function NavBar() {
     return (
-        <div className="vw-100">
+        <div cstyle={{position: "absolute",
+        height: "50px",
+        top: "10px",
+        right: "10px",
+        left: "10px"}}>
 
         <Navbar fixed="top" expand="lg" bg="dark" variant="dark" className="mb-3" >
             <Container fluid>
                 {/* left side */}
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Link to="/home" className="text-decoration-none">
+                    <Link to="/" className="text-decoration-none">
                         <img src={codeIcon} className="App-logo" alt="logo" />
                         <Navbar.Brand>Portfolio</Navbar.Brand>
                     </Link>

@@ -4,9 +4,9 @@ import headShot from '../../images/headshot.png';
 
 function AboutMe() {
     return (
-        <div className="row p-5 m-2 ">
+        <div className="row height-100 p-5 m-2 ">
             <div className="col-8 m-4">
-                <Container fluid clasName="m-5 align-items-center">
+                <Container fluid className="m-5 align-items-center">
                     <div className='justify-content-center'>
                         <Card bg="dark" text="light" className="justify-content-center">
                         <Card.Body className='p-5'>
