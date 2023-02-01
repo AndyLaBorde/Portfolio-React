@@ -168,7 +168,7 @@ function Projects() {
 
                     {/* back end applications */}
                     <div id="appScroll" className='col-4'>
-                        <h3 className='text-info m-2 border-bottom border-info border-4'>Full-Stack</h3>
+                        <h3 className='text-info m-2 border-bottom border-info border-4'>Back-End</h3>
                         <div id="appScroll" className='d-flex row h-25 overflow-scroll m-2 flex-wrap mt-3 justify-content-center' >
 
                         {/* social media api */}
