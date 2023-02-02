@@ -1,3 +1,9 @@
+# Andrew LaBorde's Professional Portfolio
+
+## Description
+
+This portfolio showcases the skills and projects that I have developed while obtaining my certification from the University of Denver 2022-2023. 
+
 ## About Me  
 
 ```javascript
