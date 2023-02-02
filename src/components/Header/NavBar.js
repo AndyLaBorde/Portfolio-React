@@ -25,7 +25,7 @@ function NavBar() {
         right: "10px",
         left: "10px"}}>
 
-        <Navbar fixed="top" expand="lg" bg="dark" variant="dark" className="mb-3" >
+        <Navbar fixed="top" expand="lg" bg="none" variant="dark" className="mb-3" >
             <Container fluid>
                 {/* left side */}
                 <Navbar.Collapse id="responsive-navbar-nav">

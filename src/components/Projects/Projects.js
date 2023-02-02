@@ -24,7 +24,7 @@ import playIcon from '../../images/playIcon.png';
 function Projects() {
     
     return(
-        <div className="d-flex flex-wrap row p-2 m-2">
+        <div id="Projects" className="d-flex flex-wrap row p-2 m-2">
             <div className="col">
                 <Container fluid id="cardContainer" className=" p-5 row h-75 mt-5">
 

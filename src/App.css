@@ -1,5 +1,6 @@
 html {
-  overflow: hidden;
+ overflow-x: hidden;
+ overflow-y: auto;
 }
 
 #appScroll::-webkit-scrollbar{
@@ -24,7 +25,7 @@ html {
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2e343f;
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;

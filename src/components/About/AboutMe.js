@@ -6,10 +6,12 @@ import headShot from '../../images/headshot.png';
 
 function AboutMe() {
     return (
-        <div className="row p-5 h-100 m-2 ">
-            <div className="col-6 h-50">
-                <Container fluid className="row justify-content-center align-items-center h-75">
-                    <div className='justify-content-center'>
+        <div style={{marginTop: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10%'}} >
+            <h3 id="AboutMe" style={{color: 'white', padding: '1%', position: 'relative', top: -200,
+        right: 0,}}>About Me</h3>
+            <div >
+                <Container fluid className="row justify-content-center align-items-center w-100">
+                    <div className='justify-content-center col-6'>
                         <Card bg="secondary" text="light" className="justify-content-center h-75">
                         <Card.Body className='p-3'>
                             <Card.Img src={headShot} alt="headshot" style={{ padding: '1%', maxHeight: '350px', maxWidth: '350px'}}></Card.Img>
@@ -23,27 +25,26 @@ function AboutMe() {
                         </Card.Body>
                     </Card>
                     </div>
-                </Container>
-            </div>
-            <div className="col-6">
                 {/* Resume */}
-                <Container fluid className="row justify-content-center align-items-center h-75">
-                    <Card bg="secondary">
-                        <Card.Title>Resume</Card.Title>
-                        <Card.Body>
-                            <Card.Header>Education</Card.Header>
-                            <Card.Text>
-                                Certificate from the University of Denver
-                                Full Stack Web Development
+                    <div className="col-6">
+                        <Card bg="secondary">
+                            <Card.Title>Resume</Card.Title>
+                            <Card.Body>
+                                <Card.Header>Education</Card.Header>
+                                <Card.Text>
+                                    Certificate from the University of Denver
+                                    Full Stack Web Development
 
-                                
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+                                    
+                                </Card.Text>
+                            </Card.Body>
+                        </Card> 
+                    </div>
+                    
                 </Container>
-                
-                
             </div>
+                
+                
         </div>
         
     );
