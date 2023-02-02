@@ -6,7 +6,7 @@ import headShot from '../../images/headshot.png';
 
 function AboutMe() {
     return (
-        <div style={{marginTop: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10%'}} >
+        <div style={{marginTop: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10%', backgroundColor: "#2C2D2B"}} >
             <h3 id="AboutMe" style={{color: 'white', padding: '1%', position: 'relative', top: -200,
         right: 0,}}>About Me</h3>
             <div >

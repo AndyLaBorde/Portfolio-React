@@ -36,6 +36,9 @@ function Home() {
                                 .pauseFor(2000)
                                 .deleteChars(16)
                                 .typeString("n out of the box thinker...")
+                                .pauseFor(2000)
+                                .deleteAll()
+                                .typeString("Get to know me... ")
                                 .start();
                             }}
                         />
