@@ -24,12 +24,15 @@ import playIcon from '../../images/playIcon.png';
 function Projects() {
     
     return(
-        <div id="Projects" className="d-flex flex-wrap row p-2 m-2">
-            <div className="col">
+        <div id="Projects" className="d-flex row h-50 p-2 m-2 justify-content-center">
+            <div className="justify-content-center col h-50" style={{flexDirection: 'column'}}>
+                <h2 className='d-flex justify-content-center text-light'> My Work </h2>
                 <Container fluid id="cardContainer" className=" p-5 row h-75 mt-5">
+                    {/* nav link  */}
+                    {/* react-masonry? */}
 
-                    {/* full stack applications */}
-                    <div  className='col-4'>
+                    {/* full stack applications --> needs to be a separate component*/}
+                    <div  className='col-4 '>
                         <h3 className='text-info m-2 border-bottom border-info border-4'>Full-Stack</h3>
                         <div id="appScroll" className='d-flex row h-25 overflow-scroll m-2 flex-wrap mt-3 justify-content-center' >
 
@@ -99,7 +102,7 @@ function Projects() {
                         </div>
                     </div>
 
-                    {/* front end applications */}
+                    {/* front end applications --> needs to be a separate component*/}
                     <div id="appScroll" className=' col-4'>
                         <h3 className="text-info m-2 border-bottom border-info border-4">Front-End</h3>
                         <div id="appScroll" className='d-flex h-25 row m-2 mt-3 overflow-scroll justify-content-center'>
@@ -166,7 +169,7 @@ function Projects() {
                         
                     </div>
 
-                    {/* back end applications */}
+                    {/* back end applications --> needs to be a separate component*/}
                     <div id="appScroll" className='col-4'>
                         <h3 className='text-info m-2 border-bottom border-info border-4'>Back-End</h3>
                         <div id="appScroll" className='d-flex row h-25 overflow-scroll m-2 flex-wrap mt-3 justify-content-center' >

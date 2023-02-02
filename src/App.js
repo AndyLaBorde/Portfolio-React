@@ -20,11 +20,11 @@ function App() {
       <Router>
         <Header />
           <Routes>
-            <Route exact path="/" component={< Home />} />
-            <Route exact path="/Home" component={ < Home />} />
-            <Route path="/About" component={< AboutMe />} />
-            <Route path="/Projects" component={< Projects />} />
-            <Route path="/Contact" component={< Contact /> } />
+            <Route exact path="/" element={< Home />} />
+            <Route exact path="/Home" element={ < Home />} />
+            <Route path="/About" element={< AboutMe />} />
+            <Route path="/Projects" element={< Projects />} />
+            <Route path="/Contact" element={< Contact /> } />
           </Routes>
         < Home />
         < AboutMe />

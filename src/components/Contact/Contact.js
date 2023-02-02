@@ -3,7 +3,7 @@
 function Contact() {
     return(
         <div id="contact">
-            <p> This is the contact page</p>
+            <p className="text-light"> This is the contact page</p>
         </div>
     )
 }
