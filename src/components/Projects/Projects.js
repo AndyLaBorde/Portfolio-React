@@ -20,19 +20,19 @@ import passwordGenerator from "../../images/passwordGenerator.png";
 import gitHubIcon from '../../images/github.png';
 import chromeIcon from '../../images/chrome-icon.png';
 import playIcon from '../../images/playIcon.png';
-import { Row } from 'react-bootstrap';
+
 
 function Projects() {
     
     return(
-            <div style={{marginTop: '1%', display: 'flex', alignItems: 'center', flexDirection: "column"}} >
+            <div style={{marginTop: '1%', display: 'flex', alignItems: 'center', flexDirection: "column", height: '50%'}} >
                 <h1 style={{color: 'white', padding: '1%', opacity: '50%', fontSize: '48px'}}> Projects </h1>
-                <Container fluid id="cardContainer" className=" p-5 d-flex" style={{flexDirection: 'row', maxHeight: '75%'}}>
+                <Container fluid id="cardContainer" className=" p-5 d-flex" style={{flexDirection: 'row', maxHeight: '50%'}}>
                     {/* nav link  */}
                     {/* react-masonry? */}
-
+                    
                     {/* full stack applications --> needs to be a separate component*/}
-                    <div  className='col-4 '>
+                    <div  className='col-4'>
                         <h3 className='text-info m-2 border-bottom border-info border-4'>Full-Stack</h3>
                         <div id="appScroll" className='d-flex row h-25 overflow-scroll m-2 flex-wrap mt-3 justify-content-center' >
 
