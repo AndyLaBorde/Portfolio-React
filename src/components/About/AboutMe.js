@@ -19,12 +19,12 @@ function Mailto({ email, subject, body, ...props }) {
 function AboutMe() {
     return (
         <div style={{marginTop: '1%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column"}} >
-            <h1 id="AboutMe" style={{color: 'white', padding: '1%', opacity: '50%'}}>About Me</h1>
+            <h1 id="AboutMe" style={{color: 'white', padding: '1%', opacity: '50%', fontSize: '78px'}}>About Me</h1>
             <div >
-                <Container fluid className="row justify-content-center align-items-center">
+                <Container fluid className="row justify-content-center align-items-center" style={{border: 'none'}}>
                     <div className='justify-content-center col-5'>
-                        <Card bg="transparent" text="light" className="justify-content-center h-75">
-                        <Card.Body className='p-3'>
+                        <Card bg="transparent" border="none" text="light" className="justify-content-center h-75">
+                        <Card.Body className='p-3 border-none'>
                             <Card.Img src={headShot} alt="headshot" style={{ padding: '1%', maxHeight: '350px', maxWidth: '350px', margin: '3%'}}></Card.Img>
                             <Card.Title className="p-2"  style={{opacity: '90%', fontSize: '28px'}}>I'm <span className='text-info' style={{opacity: '90%', fontSize: '28px'}}>Andrew LaBorde</span>, a Full Stack Developer</Card.Title>
                             <Card.Subtitle className="p-1" style={{opacity: '90%', fontSize: '18px'}}><b>Focus:</b><span className='text-info'> MongoDB, Express, React, Node</span></Card.Subtitle>
@@ -52,7 +52,7 @@ function AboutMe() {
                                         </Nav.Link>
                                     </ListGroup.Item>
                                     <ListGroup.Item className="bg-dark text-light" style={{fontSize: "24px"}}>
-                                        <b>Location:</b> Golden, Colorado</ListGroup.Item>
+                                        <b>Location:</b> <span>Golden, Colorado</span></ListGroup.Item>
                                 </ListGroup>
                                 <Button className="rounded w-50 mx-4 bg-info p-3" href={resume} download="Andrew_Resume_2023.pdf" style={{fontSize: "24px"}}>Download CV</Button>
                             </Card.Body>
