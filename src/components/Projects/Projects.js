@@ -20,14 +20,14 @@ import passwordGenerator from "../../images/passwordGenerator.png";
 import gitHubIcon from '../../images/github.png';
 import chromeIcon from '../../images/chrome-icon.png';
 import playIcon from '../../images/playIcon.png';
+import { Row } from 'react-bootstrap';
 
 function Projects() {
     
     return(
-        <div id="Projects" className="d-flex row h-50 p-2 m-2 justify-content-center">
-            <div className="justify-content-center col h-50" style={{flexDirection: 'column'}}>
-                <h3 className='d-flex justify-content-center text-light'> My Work </h3>
-                <Container fluid id="cardContainer" className=" p-5 row h-75 mt-5">
+            <div style={{marginTop: '1%', display: 'flex', alignItems: 'center', flexDirection: "column"}} >
+                <h1 style={{color: 'white', padding: '1%', opacity: '50%', fontSize: '48px'}}> Projects </h1>
+                <Container fluid id="cardContainer" className=" p-5 d-flex" style={{flexDirection: 'row', maxHeight: '75%'}}>
                     {/* nav link  */}
                     {/* react-masonry? */}
 
@@ -253,7 +253,6 @@ function Projects() {
                     </div>
                 </Container>
             </div>
-        </div>
     
     );
 }

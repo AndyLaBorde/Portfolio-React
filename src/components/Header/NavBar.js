@@ -36,14 +36,14 @@ function NavBar() {
                         to="/"
                         duration={500}
                         className="mb-lg-auto mt-lg-4 text-decoration-none">
-                        <img src={codeIcon} className="App-logo img-fluid rounded-pill mx-3" alt="logo" />
+                        <img src={codeIcon} className="App-logo" alt="logo" />
                         <Navbar.Brand className="mx-1">Andrew LaBorde</Navbar.Brand>
                     </NavLink>
                 <Nav className='ms-5'>
-                    <NavLink to="/About"  style={{textDecoration: 'none', color: "white", marginRight: "10px"}}>
+                    <NavLink to="/About" style={{textDecoration: 'none', color: "white", margin: "25px", fontSize: '18px'}}>
                         About Me
                     </NavLink>
-                    <NavLink to="/Projects" style={{textDecoration: 'none', color: "white"}} >
+                    <NavLink to="/Projects" style={{textDecoration: 'none', color: "white", margin: '25px', fontSize: "18px"}} >
                         Projects
                     </NavLink>
                 </Nav>

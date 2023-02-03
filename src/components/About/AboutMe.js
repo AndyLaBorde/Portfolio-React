@@ -19,7 +19,7 @@ function Mailto({ email, subject, body, ...props }) {
 function AboutMe() {
     return (
         <div style={{marginTop: '1%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column"}} >
-            <h1 id="AboutMe" style={{color: 'white', padding: '1%', opacity: '50%', fontSize: '78px'}}>About Me</h1>
+            <h1 id="AboutMe" style={{color: 'white', padding: '1%', opacity: '50%', fontSize: '48px'}}>About Me</h1>
             <div >
                 <Container fluid className="row justify-content-center align-items-center" style={{border: 'none'}}>
                     <div className='justify-content-center col-5'>
