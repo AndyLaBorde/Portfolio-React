@@ -8,7 +8,7 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import bgImage from '../src/images/bgImage.JPG'
-import { Col } from 'react-bootstrap';
+
 
 function App() {
   return (
@@ -21,15 +21,10 @@ function App() {
         <Header />
           <Routes>
             <Route exact path="/" element={< Home />} />
-            <Route exact path="/Home" element={ < Home />} />
             <Route path="/About" element={< AboutMe />} />
             <Route path="/Projects" element={< Projects />} />
             <Route path="/Contact" element={< Contact /> } />
           </Routes>
-        < Home />
-        < AboutMe />
-        < Projects />
-        < Contact />
         <Footer/>
       </Router>
     </div>

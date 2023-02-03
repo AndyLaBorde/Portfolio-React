@@ -1,21 +1,30 @@
+import { ListGroup, Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import headShot from '../../images/headshot.png';
+import Nav from "react-bootstrap/Nav";
 
+function Mailto({ email, subject, body, ...props }) {
+    return (
+        <Nav.Link href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+            {props.children}
+        </Nav.Link>
+    );
+}
 
 
 function AboutMe() {
     return (
-        <div style={{marginTop: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '10%', backgroundColor: "#2C2D2B", flexDirection: "column"}} >
+        <div style={{marginTop: '1%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: "column"}} >
             <h3 id="AboutMe" style={{color: 'white', padding: '1%'}}>About Me</h3>
             <div >
-                <Container fluid className="row justify-content-center align-items-center w-100">
-                    <div className='justify-content-center col-6'>
-                        <Card bg="secondary" text="light" className="justify-content-center h-75">
+                <Container fluid className="row justify-content-center align-items-center">
+                    <div className='justify-content-center col-5'>
+                        <Card bg="transparent" text="light" className="justify-content-center h-75">
                         <Card.Body className='p-3'>
-                            <Card.Img src={headShot} alt="headshot" style={{ padding: '1%', maxHeight: '350px', maxWidth: '350px'}}></Card.Img>
-                            <Card.Title className="p-2 bold-5">Andrew LaBorde</Card.Title>
-                            <Card.Subtitle className="p-1">Full Stack Web Developer</Card.Subtitle>
+                            <Card.Img src={headShot} alt="headshot" style={{ padding: '1%', maxHeight: '350px', maxWidth: '350px', margin: '3%'}}></Card.Img>
+                            <Card.Title className="p-2">I'm <span className='text-info'>Andrew LaBorde</span>, a Full Stack Developer</Card.Title>
+                            <Card.Subtitle className="p-1"><b>Focus:</b><span className='text-info'> MongoDB, Express, React, Node</span></Card.Subtitle>
                             <Card.Text className="p-1">
                                 With a background of management in the service industry and a desire for continuous learning, problem-solving and collaboration. 
                                 Strong ability to design, maintain and build web applications from conception to production.   
@@ -25,17 +34,24 @@ function AboutMe() {
                     </Card>
                     </div>
                 {/* Resume */}
-                    <div className="col-6">
-                        <Card bg="secondary">
-                            <Card.Title>Resume</Card.Title>
+                    <div className="col-5">
+                        <Card bg="transparent">
                             <Card.Body>
-                                <Card.Header>Education</Card.Header>
-                                <Card.Text>
-                                    Certificate from the University of Denver
-                                    Full Stack Web Development
-
-                                    
-                                </Card.Text>
+                                <ListGroup className="p-2 ">
+                                    <ListGroup.Item className="bg-dark text-light border-bottom" style={{fontSize: "24px"}}>
+                                        <b>Name:</b> Andrew LaBorde </ListGroup.Item>
+                                    <ListGroup.Item className="bg-dark text-light border-bottom d-flex" style={{fontSize: "24px"}}>
+                                        <b>Email:</b>
+                                        <Nav.Link eventKey={2} href={`mailto:andrew.lab14@gmail.com`}>
+                                            <Mailto email="andrew.lab14@gmail.com" subject="Contact Me" body="Hello World... " className="">
+                                                <span className='text-info' style={{paddingLeft: '10px'}}>andrew.lab14@gmail.com</span>
+                                            </Mailto>
+                                        </Nav.Link>
+                                    </ListGroup.Item>
+                                    <ListGroup.Item className="bg-dark text-light" style={{fontSize: "24px"}}>
+                                        <b>Location:</b> Golden, Colorado</ListGroup.Item>
+                                </ListGroup>
+                                <Button className="rounded w-50 mx-4 bg-info p-3" style={{fontSize: "24px"}}>Download CV</Button>
                             </Card.Body>
                         </Card> 
                     </div>

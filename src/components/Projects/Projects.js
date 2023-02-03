@@ -26,7 +26,7 @@ function Projects() {
     return(
         <div id="Projects" className="d-flex row h-50 p-2 m-2 justify-content-center">
             <div className="justify-content-center col h-50" style={{flexDirection: 'column'}}>
-                <h2 className='d-flex justify-content-center text-light'> My Work </h2>
+                <h3 className='d-flex justify-content-center text-light'> My Work </h3>
                 <Container fluid id="cardContainer" className=" p-5 row h-75 mt-5">
                     {/* nav link  */}
                     {/* react-masonry? */}

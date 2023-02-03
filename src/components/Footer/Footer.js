@@ -28,11 +28,6 @@ function Footer() {
                             React-Bootstrap
                         </Badge>{' '}
                     </Nav.Link>
-                    <Nav.Link href="https://www.npmjs.com/package/graphql-react" target="blank" className="m-3">
-                        <Badge pill bg="info" text="dark">
-                            GraphQL-React
-                        </Badge>{' '}
-                    </Nav.Link>
                     <Nav.Link href="https://nodejs.org/en/" target="blank" className="ms-auto m-3">
                         <Badge pill bg="success" text="light" >
                             Node
