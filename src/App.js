@@ -20,6 +20,7 @@ function App() {
       <Router>
         <Header />
           <Routes>
+            <Route exact path="/Portfolio-React" element={<Home />} />
             <Route exact path="/" element={< Home />} />
             <Route path="/About" element={< AboutMe />} />
             <Route path="/Projects" element={< Projects />} />

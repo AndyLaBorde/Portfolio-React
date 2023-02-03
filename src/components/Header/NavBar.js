@@ -21,7 +21,7 @@ function Mailto({ email, subject, body, ...props }) {
 
 function NavBar() {
     return (
-        <div cstyle={{position: "absolute",
+        <div style={{position: "absolute",
         height: "50px",
         top: "10px",
         right: "10px",
